@@ -31,10 +31,8 @@ using System.Text;
 using System.IO;
 using System.Collections;
 using System.Globalization;
-using System.Windows.Forms;
 using System.Xml;
 using System.Linq;
-using System.Text.RegularExpressions;
 
 namespace INDI
 {
@@ -293,7 +291,7 @@ namespace INDI
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "ERROR");
+                    Console.WriteLine(ex.Message);
                 }
             }
 			if (stream != null)
